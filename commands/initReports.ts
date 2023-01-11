@@ -1,25 +1,10 @@
 import { app } from "../config";
 
-app.message("/test", async ({ message, say }) => {
-	// say() sends a message to the channel where the event was triggered
-	await say({
-		blocks: [
-			{
-				type: "section",
-				text: {
-					type: "mrkdwn",
-					text: `Hey there <@${message.channel}>!`,
-				},
-				accessory: {
-					type: "button",
-					text: {
-						type: "plain_text",
-						text: "Click Me",
-					},
-					action_id: "button_click",
-				},
-			},
-		],
-		text: `Hey there <@${message.channel}>!`,
-	});
+app.command("/test", async ({ command, ack, say }) => {
+	// Acknowledge command request
+	await ack();
+
+	await say(
+		`${command.user_name} invoked /test command in channel ${command.channel_name}`
+	);
 });
