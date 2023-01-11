@@ -5,4 +5,5 @@ export const app = new App({
 	clientId: process.env.SLACK_CLIENT_ID,
 	clientSecret: process.env.SLACK_CLIENT_SECRET,
 	stateSecret: "my-state-secret",
+	token: process.env.SLACK_BOT_TOKEN,
 });
