@@ -1,6 +1,7 @@
 import "dotenv/config";
 import { app } from "./config";
 
+import "./commands";
 import "./messages";
 import "./events";
 
