@@ -14,7 +14,7 @@
 	"license": "MIT",
 	"private": false,
 	"scripts": {
-		"start": "tsc && node index.js",
+		"start": "tsc && node dist/index.js",
 		"ngrok": "ngrok http 3001",
 		"watch": "tsc -w",
 		"dev": "tsc && nodemon index.js"
