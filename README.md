@@ -5,8 +5,5 @@ Slack bot for creating reports for work.
 ## Commands
 
 - `/geekhelp` - show help
+- `/geekreport` - create report
 - `/geektoday` - show today's report
-
-## Messages
-
-- `geek_report` - create report
