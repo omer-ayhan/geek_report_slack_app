@@ -1,6 +1,6 @@
 import { app } from "../config";
 
-app.message("/hello", async ({ message, say }) => {
+app.message("hello", async ({ message, say }) => {
 	// say() sends a message to the channel where the event was triggered
 	await say({
 		blocks: [
